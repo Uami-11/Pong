@@ -7,8 +7,7 @@ from Script.Players import Players
 pygame.init()
 clock = pygame.time.Clock()
 pygame.display.set_caption("Bad Pong!!")
-android18 = pygame.image.load("a18.jpg")
-pygame.display.set_icon(android18)
+
 screen_width = 800
 screen_height = 800
 screen = pygame.display.set_mode((screen_width, screen_height))
