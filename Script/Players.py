@@ -4,6 +4,7 @@ import pygame
 
 
 class Players(pygame.sprite.Sprite):
+    #in the beginning I had the players be seperate parameters, so two pongs were created. Took me like an hour to figure out that i was stupid as hell
     def __init__(self, fullscreen, pong):
         super().__init__()
         if fullscreen:
@@ -22,6 +23,7 @@ class Players(pygame.sprite.Sprite):
             self.height = 800
         self.pong = pong
         self.pong1 = pong
+        #pong randomly goes up,down,left,right
         self.speed_x = random.choice([5,-5])
         self.speed_y = random.choice([4,-4])
 
